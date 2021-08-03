@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "arcanis.vscode-zipfs",
+        "dbaeumer.vscode-eslint",
+        "graphql.vscode-graphql",
+        "matklad.rust-analyzer",
+    ],
+}

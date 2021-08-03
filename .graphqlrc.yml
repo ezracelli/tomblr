@@ -1,0 +1,14 @@
+schema: "http://localhost:3000/api/graphql.json"
+documents: "sdk/**/*.graphql"
+generates:
+  ./sdk/generated.ts:
+    config:
+      avoidOptionals: true
+      scalars:
+        Cursor: string
+        DateTime: string
+        UUID: string
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-graphql-request

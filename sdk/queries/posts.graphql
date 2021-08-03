@@ -1,0 +1,21 @@
+query posts ($first: Int!, $after: Cursor) {
+    posts(first: $first, after: $after) {
+        edges {
+            cursor
+            node {
+                blog {
+                    id
+                    slug
+                }
+                createdAt
+                id
+                slug
+                updatedAt
+            }
+        }
+        pageInfo {
+            hasNextPage
+            hasPreviousPage
+        }
+    }
+}
